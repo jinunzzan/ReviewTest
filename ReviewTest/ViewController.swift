@@ -39,7 +39,8 @@ class ViewController: UIViewController {
     
     func sendReview() {
         let appId = "1667770546"
-        let url = "itms-apps://itunes.apple.com/app/" + appId;
+        let url = "itms-apps://itunes.apple.com/app/" + appId +
+        "?action=write-review";
         if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
