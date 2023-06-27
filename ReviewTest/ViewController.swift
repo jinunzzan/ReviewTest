@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     }
     
     func showReviewPopup() {
-        let alertController = UIAlertController(title: "Rate the App", message: "Enjoying the app? Please rate us on the App Store!", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "리뷰하러가기", message: "앱스토어 리뷰 url로 이동", preferredStyle: .alert)
         
-        let starAction = UIAlertAction(title: "Tap to give us 5 stars", style: .default) { _ in
+        let starAction = UIAlertAction(title: "리뷰하기", style: .default) { _ in
             // 별표를 탭한 후 실행할 동작
             // 여기에 별표를 탭한 경우의 로직을 추가하세요
             self.sendReview()
